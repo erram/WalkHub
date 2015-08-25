@@ -18,7 +18,7 @@ function main_menu_menu_default_menu_links() {
     'link_title' => 'Blog',
     'options' => array(
       'attributes' => array(
-        'title' => 'articles & showcases',
+        'title' => 'Articles & showcases',
       ),
       'identifier' => 'main-menu_blog:blog',
     ),
@@ -59,7 +59,7 @@ function main_menu_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_documentation:node/3738',
       'attributes' => array(
-        'title' => 'user & developer guide',
+        'title' => 'User & developer guide',
       ),
     ),
     'module' => 'menu',
@@ -68,26 +68,6 @@ function main_menu_menu_default_menu_links() {
     'has_children' => 1,
     'expanded' => 0,
     'weight' => -48,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_faq:node/80
-  $menu_links['main-menu_faq:node/80'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/80',
-    'router_path' => 'node/%',
-    'link_title' => 'FAQ',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_faq:node/80',
-    ),
-    'module' => 'menu',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -41,
     'customized' => 1,
   );
   // Exported menu link: main-menu_for-developers:node/3742
@@ -105,24 +85,6 @@ function main_menu_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 20,
-    'customized' => 0,
-    'parent_identifier' => 'main-menu_documentation:node/3738',
-  );
-  // Exported menu link: main-menu_get-started-now:node/7239
-  $menu_links['main-menu_get-started-now:node/7239'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/7239',
-    'router_path' => 'node/%',
-    'link_title' => 'Get started now!',
-    'options' => array(
-      'identifier' => 'main-menu_get-started-now:node/7239',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
     'customized' => 0,
     'parent_identifier' => 'main-menu_documentation:node/3738',
   );
@@ -204,27 +166,6 @@ function main_menu_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'main-menu_documentation:node/3738',
   );
-  // Exported menu link: main-menu_submit-an-issue:https://github.com/Pronovix/WalkHub/issues
-  $menu_links['main-menu_submit-an-issue:https://github.com/Pronovix/WalkHub/issues'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'https://github.com/Pronovix/WalkHub/issues',
-    'router_path' => '',
-    'link_title' => 'Submit an issue',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_submit-an-issue:https://github.com/Pronovix/WalkHub/issues',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_documentation:node/3738',
-  );
   // Exported menu link: main-menu_user-guide:node/3739
   $menu_links['main-menu_user-guide:node/3739'] = array(
     'menu_name' => 'main-menu',
@@ -243,21 +184,18 @@ function main_menu_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'main-menu_documentation:node/3738',
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
   t('Contact');
   t('Documentation');
-  t('FAQ');
   t('For developers');
-  t('Get started now!');
   t('Open Source');
   t('Pricing');
   t('Resources');
   t('Style guide');
-  t('Submit an issue');
   t('User guide');
-
 
   return $menu_links;
 }
